@@ -7,16 +7,4 @@
      <!-- <p>{{book.name}}</p>  -->
     </li>
 </ul>
-<div *ngIf="selectedBook">
-    <h1>Checkout Details</h1>
-<h2>{{selectedBook.name | uppercase}} </h2>
-<div><span>id: </span>{{selectedBook.id}}</div>
-<div>
-    <label>name:
-        <input [(ngModel)]="selectedBook.name" placeholder="name"/>
-    </label><br>
-    <button onclick="">Checkout This Item
-        </button>
-</div>
-</div>
 
