@@ -1,10 +1,11 @@
-    <div *ngIf="selectedBook">
+    <div *ngIf="book">
+
+        <h2>{{book.name | uppercase}} </h2>
         <h1>Checkout Details</h1>
-    <h2>{{selectedBook.name | uppercase}} </h2>
-    <div><span>id: </span>{{selectedBook.id}}</div>
+    <div><span>id: </span>{{book.id}}</div>
     <div>
         <label>name:
-            <input [(ngModel)]="selectedBook.name" placeholder="name"/>
+            <input [(ngModel)]="book.name" placeholder="name"/>
         </label><br>
         <button onclick="">Checkout This Item
             </button>
